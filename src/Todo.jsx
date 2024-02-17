@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import {FaRegTrashAlt} from 'react-icons/fa'
+// styling for the divs
 const style = {
   li:`flex justify-between bg-slate-200 p-4 my-2 capitalize`,
   liComplete:`flex justify-between bg-slate-400 p-4 my-2 capitalize`,
@@ -8,6 +9,7 @@ const style = {
   textComplete:`ml-2 cursor-pointer line-through`,
   button: `cursor-pointer flex items-center`,
 }
+// Component material for the li
 const Todo = ({todo, toggleComplete, deleteTodo}) => {
   return (
     <li className={todo.completed ? style.liComplete : style.li}>
